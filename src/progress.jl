@@ -73,5 +73,5 @@ Logging.shouldlog(::JunoProgressLogger, level, _module, group, id) = true
 
 Logging.catch_exceptions(::JunoProgressLogger) = true
 
-Logging.min_enabled_level(::JunoProgressLogger) = Logging.BelowMinLevel
+Logging.min_enabled_level(::JunoProgressLogger) = Logging.LogLevel(-1)
 end
